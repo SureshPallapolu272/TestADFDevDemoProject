@@ -1,0 +1,10 @@
+{
+	"name": "AzureSqlDatabase196",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestResourceGroup002/providers/Microsoft.Sql/servers/testsqlserverdemo009",
+		"groupId": "sqlServer",
+		"fqdns": [
+			"testsqlserverdemo009.database.windows.net"
+		]
+	}
+}
