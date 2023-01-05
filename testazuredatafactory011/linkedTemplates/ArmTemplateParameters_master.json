@@ -1,0 +1,91 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testazuredatafactory011"
+		},
+		"LS_ADLSConnection_accountKey": {
+			"value": ""
+		},
+		"LS_BlobConnection_connectionString": {
+			"value": ""
+		},
+		"LS_BlobConnection01_connectionString": {
+			"value": ""
+		},
+		"LS_SourceService_connectionString": {
+			"value": ""
+		},
+		"LS_TargetBlobConection_connectionString": {
+			"value": ""
+		},
+		"linkedService1_secretAccessKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
+			"value": "SQLConnectionString"
+		},
+		"LS_ADLSConnection_properties_typeProperties_url": {
+			"value": "https://azuredatalakegen2011.dfs.core.windows.net/"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_KeyvaultConnection_properties_typeProperties_baseUrl": {
+			"value": "https://testkeyvaultdemo011.vault.azure.net/"
+		},
+		"linkedService1_properties_typeProperties_accessKeyId": {
+			"value": "spalla"
+		},
+		"Trigger_z0n_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"integrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "testsqlserverdemo009.database.windows.net"
+		},
+		"integrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "Suresh"
+		},
+		"integrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		},
+		"integrationRuntime3_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "azuresqlserverdemo001.database.windows.net"
+		},
+		"integrationRuntime3_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "Suresh"
+		},
+		"integrationRuntime3_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		},
+		"AzureBlobStorage594_properties_privateLinkResourceId": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG-009/providers/Microsoft.Storage/storageAccounts/testblobstorage024"
+		},
+		"AzureBlobStorage594_properties_groupId": {
+			"value": "blob"
+		},
+		"AzureBlobStorage594_properties_fqdns": {
+			"value": [
+				"testblobstorage024.blob.core.windows.net"
+			]
+		},
+		"AzureSqlDatabase196_properties_privateLinkResourceId": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestResourceGroup002/providers/Microsoft.Sql/servers/testsqlserverdemo009"
+		},
+		"AzureSqlDatabase196_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"AzureSqlDatabase196_properties_fqdns": {
+			"value": [
+				"testsqlserverdemo009.database.windows.net"
+			]
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
